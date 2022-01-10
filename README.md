@@ -13,6 +13,8 @@ An attempt to make a mouse
 
 ## Links
 
-[https://www.instructables.com/Space-Mouse-With-Arduino-Micro-Fully-Printable/](Thingiverse project)
-[https://www.instructables.com/Creative-Console-for-Space-Mouse/](Creative Console for Space Mouse)
-[https://www.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardmodifiers/](Keyboard Modifiers reference)
+[Thingiverse project](https://www.instructables.com/Space-Mouse-With-Arduino-Micro-Fully-Printable/)  
+
+[Creative Console for Space Mouse](https://www.instructables.com/Creative-Console-for-Space-Mouse/)  
+
+[Keyboard Modifiers reference](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardmodifiers/)  
