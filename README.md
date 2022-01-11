@@ -18,3 +18,6 @@ An attempt to make a mouse
 [Creative Console for Space Mouse](https://www.instructables.com/Creative-Console-for-Space-Mouse/)  
 
 [Keyboard Modifiers reference](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardmodifiers/)  
+
+[Another project on GitHub](https://github.com/soemarko/DIY-Space-Mouse)  
+
