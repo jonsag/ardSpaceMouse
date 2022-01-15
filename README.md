@@ -1,6 +1,6 @@
 # ardSpaceMouse
 
-An attempt to make a mouse
+An attempt to make a mouse  
 
 ## Part list
 
@@ -20,4 +20,3 @@ An attempt to make a mouse
 [Keyboard Modifiers reference](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardmodifiers/)  
 
 [Another project on GitHub](https://github.com/soemarko/DIY-Space-Mouse)  
-
