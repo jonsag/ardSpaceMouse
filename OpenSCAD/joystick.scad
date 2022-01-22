@@ -47,15 +47,16 @@ module joystickMounts() {
   for(pos = joystickMountPos) {
     translate(pos) {
       difference() {
-      cylinder(d = standDia, h = joystickZ, center = true, $fn = roundness);
+      cylinder(d = standDia, h = joystickZ + wallThickness + 1, center = true, $fn = roundness);
       color("red")
-      cylinder(d = insertDia, h = joystickZ + 0.2, center = true, $fn = roundness);
+      cylinder(d = insertDia, h = joystickZ +wallThickness + 1.2, center = true, $fn = roundness);
       }
     }
   }
 }
 
 module joystick_n_board() {
+  //color("black")
   translate([0, 0, joystickZ]) {
     color("black")
       joystickTop();
@@ -72,3 +73,5 @@ module joystick_n_board() {
 }
 
 joystick_n_board();
+
+joystickMounts();

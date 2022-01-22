@@ -4,6 +4,7 @@ include <config.scad>
 
 use <joystick.scad>
 use <board.scad>
+use <encoder.scad>
 
 // calculations
 
@@ -30,58 +31,40 @@ module baseShell() {
       //color(alpha = 0.2)
       cylinder(h = baseHeight, d = baseDia - gripDepth * 2 - wallThickness, center = true, $fn = roundness);
     }
+}
 
-  // lid stands
+module lidStands() {
   rotate([0, 0, 45]) {
-    difference() {
-      translate([-baseDia / 2 + gripDepth + standDia / 2, 0, baseHeight / 2])
-	cylinder(d = standDia, h = baseHeight, center = true, $fn = roundness);
-      
-      translate([-baseDia / 2 + gripDepth + standDia / 2, 0, baseHeight / 2])
-	color("red")
-	cylinder(d = insertDia, h = baseHeight + 0.2, center = true, $fn = roundness);  
-    }
-    
-    difference() {
-      translate([baseDia / 2 - gripDepth - standDia / 2, 0, baseHeight / 2])	
-	cylinder(d = standDia, h = baseHeight, center = true, $fn = roundness);
-      
-      translate([baseDia / 2 - gripDepth - standDia / 2, 0, baseHeight / 2])
-	color("red")
-	cylinder(d = insertDia, h = baseHeight + 0.2, center = true, $fn = roundness);
-    }
-    
-    difference() {
-      translate([0, -baseDia / 2 + gripDepth + standDia / 2, baseHeight / 2])	
-	cylinder(d = standDia, h = baseHeight, center = true, $fn = roundness);
-      
-      translate([0, -baseDia / 2 + gripDepth + standDia / 2, baseHeight / 2])
-	color("red")
-	cylinder(d = insertDia, h = baseHeight + 0.2, center = true, $fn = roundness);
-    }
-    
-    difference() {
-      translate([0, baseDia / 2 - gripDepth - standDia / 2, baseHeight / 2])
-	cylinder(d = standDia, h = baseHeight, center = true, $fn = roundness);
-      
-      translate([0, baseDia / 2 - gripDepth - standDia / 2, baseHeight / 2])
-	color("red")
-	cylinder(d = insertDia, h = baseHeight + 0.2, center = true, $fn = roundness);
+    for (pos = lidStandsPos) {
+      difference() {
+	translate(pos)
+	  cylinder(d = standDia, h = baseHeight, center = true, $fn = roundness);
+	
+	translate(pos)
+	  color("red")
+	  cylinder(d = insertDia, h = baseHeight + 0.2, center = true, $fn = roundness);
+      }
     }
   }
-  
 }
 
 module base() {
   difference() {
     union() {
-      baseShell();
+      difference() {
+	baseShell();
+	encoderCutOut();
+      }
+      lidStands();
       
       joystickMounts();
       
       microBoardMount();
+
+      encoderMount();
     } // union
     microCutOut();
+    
   } // difference
 }
 
