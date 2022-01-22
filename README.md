@@ -1,11 +1,18 @@
 # ardSpaceMouse
 
-An attempt to make a mouse  
+An attempt to make a "mouse".  
 
+Perhaps suited for CAD-work.  
+
+A joystick to pan/zoom.  
+Also a rotary encoder and three buttons for other purposes.  
+
+!! Work in progress !!  
 ## Part list
 
 * 1 x [Arduino Micro](https://www.amazon.se/DANDANdianzi-Leonardo-AT32U4-styrkort-ers%C3%A4ttning/dp/B086ZQK2FQ)
 * 1 x [Joystick module](https://www.electrokit.com/produkt/analog-joystick-2-axel/)
+* 1 x [Rotary encoder](https://www.electrokit.com/produkt/rotationsenkoder-24-p-v-med-tryckknapp/)
 * 6 x [M2.5 screw](https://www.electrokit.com/produkt/skruv-ph-m2-5x6/)
 * 4 x [1.6mm screw](https://www.electrokit.com/produkt/skruv-ph-m1-6x5/)
 * 3 x [Micro switch](https://www.electrokit.com/produkt/tryckknapp-pcb-6x6x4-8mm-svart/)
