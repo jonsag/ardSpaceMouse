@@ -47,7 +47,7 @@ module joystickMounts() {
   for(pos = joystickMountPos) {
     translate(pos) {
       difference() {
-      cylinder(d = standDia, h = joystickZ + wallThickness + 1, center = true, $fn = roundness);
+	cylinder(d1 = standBottomDia, d2 = standDia, h = joystickZ + wallThickness + 1, center = true, $fn = roundness);
       color("red")
       cylinder(d = insertDia, h = joystickZ +wallThickness + 1.2, center = true, $fn = roundness);
       }

@@ -38,7 +38,7 @@ module lidStands() {
     for (pos = lidStandsPos) {
       difference() {
 	translate(pos)
-	  cylinder(d = standDia, h = baseHeight, center = true, $fn = roundness);
+	  cylinder(d1 = standBottomDia, d2 = standDia, h = baseHeight, center = true, $fn = roundness);
 	
 	translate(pos)
 	  color("red")
@@ -68,4 +68,13 @@ module base() {
   } // difference
 }
 
-base();
+module slice() {
+  difference() {
+    base();
+    translate([-baseDia / 2 - 8, 0, baseHeight / 2])
+      cube([baseDia, baseDia, baseHeight + 0.2], center = true);
+  }
+}
+slice();
+
+//base();

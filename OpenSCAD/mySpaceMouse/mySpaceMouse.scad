@@ -11,16 +11,15 @@ use <encoder.scad>
 
 showBase = true;
 showTop = false;
-showButtonRods = true;
-
-showEncoderWheel = true;
+showButtonRods = false;
+showEncoderWheel = false;
 
 showJoystick = true;
 showBoard = true;
 showButtons = false;
 showEncoder = true;
 
-print = false;
+print = true;
 
 //color(alpha = 0.2)
 if(showBase) {

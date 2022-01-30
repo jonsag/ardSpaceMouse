@@ -134,18 +134,15 @@ module rodGuide() {
     }
 
 module boardMounts() {
-  for(rot = buttonsRot) {
-    rotate(rot)
-      translate([0, 0, (domeZOffset + domeZ / 2) / 2])
-      for (pos = buttonMountPos) {
-	translate(pos)
-	  difference() {
-	  cylinder(d = standDia, h =  domeZOffset + domeZ / 2, center = true, $fn = roundness);
-	  color("red")
-	    cylinder(d = insertDia, h =  domeZOffset + domeZ / 2 + 0.2, center = true, $fn = roundness);
-	}
+  translate([0, 0, (domeZOffset + domeZ / 2) / 2])
+    for (pos = buttonMountPos) {
+      translate(pos)
+	difference() {
+	cylinder(d = standDia, h =  domeZOffset + domeZ / 2, center = true, $fn = roundness);
+	color("red")
+	  cylinder(d = insertDia, h =  domeZOffset + domeZ / 2 + 0.2, center = true, $fn = roundness);
       }
-  }
+    }
 }
 
 module dome() {
@@ -176,8 +173,8 @@ module dome() {
 
 module domeTest() {
   difference() {
-  domeShell();
-  rodCutOut();
+    domeShell();
+    rodCutOut();
   }
   rodGuide();
 }
@@ -187,7 +184,7 @@ module buttons() {
   buttonBoards();
 }
 
-domeTest();
+dome();
 
 //6mmButtons();
 //board();

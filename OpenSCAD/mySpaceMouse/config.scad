@@ -7,8 +7,10 @@ baseDia = 65;
 
 gripDepth = 3;
 
-standDia = 7;
+standDia = 9;
 insertDia = 5;
+//standTopDia = 7;
+standBottomDia = 11;
 
 screwHoleDia = 3.5;
 screwHeadDia = 5;
