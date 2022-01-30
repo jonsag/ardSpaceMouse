@@ -27,3 +27,5 @@ Also a rotary encoder and three buttons for other purposes.
 [Keyboard Modifiers reference](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardmodifiers/)  
 
 [Another project on GitHub](https://github.com/soemarko/DIY-Space-Mouse)  
+
+[Orbion Space Mouse](https://github.com/FaqT0tum/Orbion_Space_Mouse)  
