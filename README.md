@@ -8,6 +8,7 @@ A joystick to pan/zoom.
 Also a rotary encoder and three buttons for other purposes.  
 
 !! Work in progress !!  
+
 ## Part list
 
 * 1 x [Arduino Micro](https://www.amazon.se/DANDANdianzi-Leonardo-AT32U4-styrkort-ers%C3%A4ttning/dp/B086ZQK2FQ)
@@ -28,4 +29,5 @@ Also a rotary encoder and three buttons for other purposes.
 
 [Another project on GitHub](https://github.com/soemarko/DIY-Space-Mouse)  
 
-[Orbion Space Mouse](https://github.com/FaqT0tum/Orbion_Space_Mouse)  
+[Orbion 3D Space Mouse@github](https://github.com/FaqT0tum/Orbion_3D_Space_Mouse)  
+[Orbion 3D Space Mouse@discord](https://discord.com/channels/920223684638179348/939922673646043176)  
