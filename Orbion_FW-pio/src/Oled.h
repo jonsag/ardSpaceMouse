@@ -18,7 +18,7 @@ Adafruit_SSD1306 display(4);
 // COMMENT ALL IN THIS SECTION IF YOU CAN USE A SSD1306 LIBRARY
 // also uncomments the inherent initialization
 
-//#include <Adafruit_SH110X.h>
-// Adafruit_SH1106G display = Adafruit_SH1106G(128, 64, &Wire, 4);
-//#define SSD1306 LOW
-//#define WHITE SH110X_WHITE
+// #include <Adafruit_SH110X.h>
+//  Adafruit_SH1106G display = Adafruit_SH1106G(128, 64, &Wire, 4);
+// #define SSD1306 LOW
+// #define WHITE SH110X_WHITE
